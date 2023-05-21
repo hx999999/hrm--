@@ -26,40 +26,11 @@ MySQL 5.7
    管理员账号: admin 密码: admin123  
    普通用户：test 密码：test  
 
-#### 系统演示视频
 
-http://image.timelost.cn/系统演示视频.mp4
 
 #### 演示地址
 
 http://ehr.timelost.cn/
 
-#### 系统截图
 
-![系统截图](/img/示例图片2.png)
-![系统截图](/img/示例图片1.png)
 
-#### 常见问题
-1. 提示"未携带Token，禁止访问接口"
-原因：这个项目是前后端分离的，不能直接调用后端接口，请使用nginx部署前端，通过前端页面去访问
-
-2. nginx配置参考
-```
-server {
-        listen        80;
-        server_name  localhost;
-        
-        location / {
-	    root   "D:/SourceCode/study/springboot-ehr/ehr-admin";
-            index index.html;
-        }
-}
-```
-
-3.部署到服务器后调用不到后端接口
-解决：修改 ehr-admin/layuimini/js/lay-module/common/common.js 文件中第6行localhost为服务器IP
-
-#### 问题联系
-
-环境问题、部署问题、毕业设计等问题请联系
-![问题联系](https://ae02.alicdn.com/kf/Hc2f08f3dd83346a989d1cc49c42c8cd9k.png)
